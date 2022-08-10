@@ -19,6 +19,7 @@ export const ContactForm = () => {
 
     if (contacts.find(c => c.name === name)) {
       alert('You saved this contact!');
+      form.reset();
       return;
     }
 
